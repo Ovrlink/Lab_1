@@ -38,7 +38,6 @@ class AnimalAdapter(private var animalList:ArrayList<animals>, var context: Cont
             var Details : String = animalList.get(position).description
 
             var intent = Intent (context, Detailed::class.java)
-
             intent.putExtra("Name",Name)
             intent.putExtra("Details", Details)
 
